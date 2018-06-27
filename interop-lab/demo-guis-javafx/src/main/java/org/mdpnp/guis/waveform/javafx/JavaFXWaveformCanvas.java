@@ -17,6 +17,8 @@ public class JavaFXWaveformCanvas implements WaveformCanvas {
     public JavaFXWaveformCanvas(JavaFXWaveformPane pane) {
         this.pane = pane;
         this.currentContext = pane.canvas.getGraphicsContext2D();
+        this.currentContext.setLineWidth(5.);
+        //Font f = this.currentContext.getFont();
     }
     
     protected static class ExtentImpl extends Rectangle implements Extent {
