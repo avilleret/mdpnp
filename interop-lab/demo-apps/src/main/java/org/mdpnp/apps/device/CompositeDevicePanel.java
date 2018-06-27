@@ -62,6 +62,7 @@ public class CompositeDevicePanel extends BorderPane {
         getStylesheets().add(getClass().getResource("demo-guis-javafx.css").toExternalForm());
         getStyleClass().add("composite");
         
+        /*
         GridPane header = new GridPane();
         header.setHgap(10.0);
 
@@ -91,6 +92,7 @@ public class CompositeDevicePanel extends BorderPane {
 
         header.add(icon, 2, 0, 1, 8);
         setTop(header);
+        */
         data.setCenter(WAITING);
         setCenter(data);
     }
